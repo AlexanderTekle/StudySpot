@@ -11,8 +11,8 @@ class StudySpace:
     closeTime = "3"
     groupConducive = False
     campus = ""
-    distance = 0;
-    count = 0;
+    distance = 0
+    count = 0
 
     inputTime = ""
     inputDistance = ""
@@ -52,6 +52,8 @@ def home():
 
 @app.route('/form', methods = ['POST', 'GET'])
 def home2():
+    if request.method == 'GET':
+        return render_template('results.html', result1 = top3Spaces[0])
     if request.method == 'POST':
         global inputTime
         inputTime = request.form['time']
@@ -65,11 +67,12 @@ def home2():
         inputCampus = request.form['radio1']
         global inputGroup
         inputGroup = request.form['radio2']
-        print (inputTime + " " + inputDistance + " " + inputVolume + " " + inputFood + " " + inputCampus + " " + inputGroup)
         attributes()
         top3()
 
-    return render_template('form.html')
+    return render_template('results.html', result1 = top3Spaces[0], result2 = top3Spaces[1], result3 = top3Spaces[2])
+
+
 
 def attributes():
 
@@ -113,10 +116,9 @@ def contents():
 
 top3Spaces = []
 def top3():
-    sorted(spaces, key = lambda StudySpace: StudySpace.count)
-
+    sortedList = sorted(spaces, key=lambda StudySpace: StudySpace.count,reverse=True)
     for index in range(0,3):
-        top3Spaces.append(spaces[index])
+        top3Spaces.append(sortedList[index].name)
 
 
 if __name__ == '__main__':
