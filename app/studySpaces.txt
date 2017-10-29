@@ -1,0 +1,23 @@
+Harry Ransom Center Library * Low * N/A * 12 * 17 * False * On * 5
+Battle Hall Library* Low * N/A * 9am * 10pm * False * On * 3 
+FAC * Medium * Potbelly, Chipotle, Jamba Juice, Moojo * 8 * 22 * True * On * 3
+Sutton Hall Graduate Study Lounge * Quiet * N/A * 8 * 22 * False * On * 4
+Union Dining * High * Wendy's, Panda Express, Field of Greens, Starbucks, Guadelupe Eats * 10 * 27 * True * On * 4
+Union President's Reading Room * Low * Wendy's, Panda Express, Field of Greens, Starbucks, Guadelupe Eats * 10 * 27 * False * On * 3
+Union Underground Game Room * High * Wendy's, Panda Express, Field of Greens, Starbucks, Guadelupe Eats * 10 * 27 * True * On * 3
+Life Sciences Library - Tower * Low * Wendy's, Panda Express, Field of Greens, Starbucks, Guadelupe Eats * 14 * 22 * False * On * 5
+Student Activity Center * Medium * Zen, Chic-fil-a, Taco Cabana, Starbucks * 0 * 0 * True * On * 10
+PCL 4th Floor * High * Prufrock's Cafe, Jester City Limits, Jesta Pizza * 0 * 0 * True * On * 15
+Gates Dell Complex * Medium * Qualcomm Cafe (Coffee), O's Campus Cafe (Lunch) * 0 * 0 * True * On * 10
+McCombs 5th Floor Atrium * Medium * N/A * 0 * 0 * True * On * 15
+CLA Study Area 1F * Low * N/A * 0 * 0 * False * On * 15
+Norman Hackerman Outdoor Space * Low * N/A * 0 * 0 * True * On * 10
+Classics Library * Low * N/A * 8 * 17 * False * On * 10
+Stark Center * Low * N/A * 9 * 17 * False * Off * 20
+Fine Arts Library * Low * N/A * 8 * 22 * True * Off * 20
+RLM Library * Medium * Coffee Traders * 8 * 22 * True * On * 15
+Tarleton Law Library * Low * Red River Cafe * 7 * 24 * False * Off * 20
+Alumni Center * Medium * Coffee Traders * 10 * 18 * True * On * 15
+Starbucks on 24th * Medium * Coffee * 6 * 24 * True * Off * 2
+Bennu Coffee * Medium * Cafe Eats * 0 * 0 * True * Off * 40
+Cafe Medici * Medium * Cafe Eats * 7 * 22 * True * Off * 2
