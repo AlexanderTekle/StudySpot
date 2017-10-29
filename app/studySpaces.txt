@@ -4,7 +4,7 @@ FAC * Medium * Potbelly, Chipotle, Jamba Juice, Moojo * 8 * 22 * True * On * 3
 Sutton Hall Graduate Study Lounge * Quiet * N/A * 8 * 22 * False * On * 4
 Union Dining * High * Wendy's, Panda Express, Field of Greens, Starbucks, Guadelupe Eats * 10 * 3 * True * On * 4
 Union President's Reading Room * Low * Wendy's, Panda Express, Field of Greens, Starbucks, Guadelupe Eats * 10 * 3 * False * On * 3
-Union Underground Game Room * High * Wendy's, Panda Express, Field of Greens, Starbucks, Guadelupe Eats * 10 * 27 * True * On * 3
+Union Underground Game Room * High * Wendy's, Panda Express, Field of Greens, Starbucks, Guadelupe Eats * 10 * 3 * True * On * 3
 Life Sciences Library - Tower * Low * Wendy's, Panda Express, Field of Greens, Starbucks, Guadelupe Eats * 14 * 22 * False * On * 5
 Student Activity Center * Medium * Zen, Chic-fil-a, Taco Cabana, Starbucks * 0 * 0 * True * On * 10
 PCL 4th Floor * High * Prufrock's Cafe, Jester City Limits, Jesta Pizza * 0 * 0 * True * On * 15

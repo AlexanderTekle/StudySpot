@@ -43,10 +43,14 @@ for line in file:
 app = Flask(__name__)
 
 @app.route('/')
+def homepage():
+    return render_template('index.html')
+
+@app.route('/form')
 def home():
   return render_template('form.html')
 
-@app.route('/', methods = ['POST'])
+@app.route('/form', methods = ['POST'])
 def home2():
     global inputTime
     inputTime = request.form['time']
@@ -64,22 +68,23 @@ def home2():
     #print(contents())
     print (inputTime + " " + inputDistance + " " + inputVolume + " " + inputFood + " " + inputCampus + " " + inputGroup)
     attributes()
-    #print ("here")
+    top3()
 
 
     return render_template('form.html')
 
 def attributes():
 
-            #if 1 > 0 and 2 > 0:
-         #   space.count = space.count + 1
-          #  print(str(space.count))
     #update count
     for space in spaces:
-        if int(inputTime) >= int(space.openTime) and int(inputTime) < int(space.closeTime):
-            space.count = space.count + 1
-        #if (inputTime >= openTime) and (time <= closeTime)
-            #count+1
+        #take it out later if its not good
+        if int(space.openTime) <= int(space.closeTime):
+            if int(space.openTime) <= int(inputTime) < int(space.closeTime):
+                space.count = space.count + 1
+        else:
+            if int(space.openTime) <= int(inputTime) or int(inputTime) > int(space.closeTime):
+                space.count = space.count + 1
+
 
         if int(inputDistance) >= int(space.distance):
             space.count = space.count + 1
@@ -95,9 +100,9 @@ def attributes():
             #count + 1
         if (inputGroup == "True" and space.groupConducive == "True") or (inputGroup == "False" and space.groupConducive == "False"):
             space.count = space.count + 1
-       # if (inputGroup == "True" and groupConducive == "True") or (inputGroup == "False" and groupConducive == "False")
-            #count + 1
-        print("" + space.name + " " + str(space.count))
+
+        if(inputFood == "True" and space.foodOptions != "N/A"):
+            space.count = space.count + 1
 
 
 def contents():
@@ -108,7 +113,12 @@ def contents():
         x + 1
     return spotLine
 
+top3Spaces = []
+def top3():
+    sorted(spaces, key = lambda StudySpace: StudySpace.count)
 
+    for index in range(0,3):
+        top3Spaces.append(spaces[index])
 
 
 if __name__ == '__main__':
