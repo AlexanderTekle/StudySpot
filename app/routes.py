@@ -30,7 +30,6 @@ spaces = []
 for line in file:
     spaces.append(StudySpace(line))
 
-
 app = Flask(__name__)
 
 @app.route('/')
@@ -39,7 +38,12 @@ def home():
 
 @app.route('/', methods = ['POST'])
 def home2():
-    print("hey")
+    time = request.form['time']
+    distance = request.form['distance']
+    volume = request.form['volume']
+    print (time + distance + volume)
+    return render_template('form.html')
+
 
 if __name__ == '__main__':
   app.run(debug=True)

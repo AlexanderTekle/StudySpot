@@ -8,20 +8,11 @@
 <body>
     <div class = "form-box">
         <h1 class = "formtitle">Form</h1>
-        <form method="POST">
-          <!--
-          <div class="form-group fg">
-            <label class="col-form-label" for="formGroupExampleInput">Example label</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
-          </div>
-          <div class="form-group fg">
-            <label class="col-form-label" for="formGroupExampleInput2">Another label</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
-          </div>-->
+        <form action="." method="POST">
 
           <div class = "form-group fg">
           <b><p>What time do you plan to begin studying?</p></b>
-            <select class="custom-select d-block my-3" name = 'time'>
+            <select class="custom-select d-block my-3" name = "time">
               <option value="">Time</option>
               <option value="1">12:00 AM</option>
               <option value="2">1:00 AM</option>
@@ -52,7 +43,7 @@
 
           <div class = "form-group fg">
             <b><p>What is the maximum amount of time you're willing to walk?</p></b>
-            <select class="custom-select d-block my-3">
+            <select class="custom-select d-block my-3" name = "distance">
               <option value="">Walk Duration</option>
               <option value="1">5 Mins</option>
               <option value="2">10 Mins</option>
@@ -63,7 +54,7 @@
 
           <div class = "form-group fg">
             <b><p>What is the preferred volume level for your studying environment?</p></b>
-            <select class="custom-select d-block my-3">
+            <select class="custom-select d-block my-3" name = "volume">
               <option value="">Volume Level</option>
               <option value="1">Low</option>
               <option value="2">Medium</option>
@@ -74,12 +65,12 @@
         <div class = "form-group fg">
           <p><b>Would you be interested in nearby food/drinking options?</b></p>
          <label class="custom-control custom-radio">
-            <input id="radio1" name="radio" type="radio" class="custom-control-input">
+            <input id="radio1" name="radio0" type="radio" class="custom-control-input">
             <span class="custom-control-indicator"></span>
             <span class="custom-control-description">Yes</span>
         </label>
         <label class="custom-control custom-radio">
-          <input id="radio2" name="radio" type="radio" class="custom-control-input">
+          <input id="radio2" name="radio0" type="radio" class="custom-control-input">
           <span class="custom-control-indicator"></span>
           <span class="custom-control-description">No</span>
         </label>
@@ -88,12 +79,12 @@
         <div class = "form-group fg">
           <p><b>Would you prefer to study on campus?</b></p>
          <label class="custom-control custom-radio">
-            <input id="radio1" name="radio" type="radio" class="custom-control-input">
+            <input id="radio1" name="radio1" type="radio" class="custom-control-input">
             <span class="custom-control-indicator"></span>
             <span class="custom-control-description">Yes</span>
         </label>
         <label class="custom-control custom-radio">
-          <input id="radio2" name="radio" type="radio" class="custom-control-input">
+          <input id="radio2" name="radio1" type="radio" class="custom-control-input">
           <span class="custom-control-indicator"></span>
           <span class="custom-control-description">No</span>
         </label>
@@ -102,18 +93,17 @@
         <div class = "form-group fg">
           <p><b>Do you plan to study with a group?</b></p>
          <label class="custom-control custom-radio">
-            <input id="radio1" name="radio" type="radio" class="custom-control-input">
+            <input id="radio1" name="radio2" type="radio" class="custom-control-input">
             <span class="custom-control-indicator"></span>
             <span class="custom-control-description">Yes</span>
         </label>
         <label class="custom-control custom-radio">
-          <input id="radio2" name="radio" type="radio" class="custom-control-input">
+          <input id="radio2" name="radio2" type="radio" class="custom-control-input">
           <span class="custom-control-indicator"></span>
           <span class="custom-control-description">No</span>
         </label>
        </div>
-
-
+       <input type="submit" value="Submit">
 
 
 
