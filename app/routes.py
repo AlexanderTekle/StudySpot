@@ -50,26 +50,24 @@ def homepage():
 def home():
   return render_template('form.html')
 
-@app.route('/form', methods = ['POST'])
+@app.route('/form', methods = ['POST', 'GET'])
 def home2():
-    global inputTime
-    inputTime = request.form['time']
-    global inputDistance
-    inputDistance = request.form['distance']
-    global inputVolume
-    inputVolume = request.form['volume']
-    global inputFood
-    inputFood = request.form['radio0']
-    global inputCampus
-    inputCampus = request.form['radio1']
-    global inputGroup
-    inputGroup = request.form['radio2']
-    #inputs = [time, distance, volume, food, onCampus, group]
-    #print(contents())
-    print (inputTime + " " + inputDistance + " " + inputVolume + " " + inputFood + " " + inputCampus + " " + inputGroup)
-    attributes()
-    top3()
-
+    if request.method == 'POST':
+        global inputTime
+        inputTime = request.form['time']
+        global inputDistance
+        inputDistance = request.form['distance']
+        global inputVolume
+        inputVolume = request.form['volume']
+        global inputFood
+        inputFood = request.form['radio0']
+        global inputCampus
+        inputCampus = request.form['radio1']
+        global inputGroup
+        inputGroup = request.form['radio2']
+        print (inputTime + " " + inputDistance + " " + inputVolume + " " + inputFood + " " + inputCampus + " " + inputGroup)
+        attributes()
+        top3()
 
     return render_template('form.html')
 
